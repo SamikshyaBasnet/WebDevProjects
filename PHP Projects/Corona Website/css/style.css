@@ -1,0 +1,189 @@
+/* <style type="text/css"> */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav_style {
+    background-color: #08092b !important;
+}
+
+
+
+.nav_style a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.nav_style li a:hover {
+    color: #f09711;
+}
+
+.nav_style ul li {
+    padding: 12px;
+    font-size: 19px;
+}
+
+.main_header {
+    height: 450px;
+    width: 100%;
+}
+
+.rightside h1 {
+    font-size: 3rem;
+}
+
+.corona_rot img {
+    margin-left: 0px;
+    animation: corona 3s linear infinite;
+}
+
+@keyframes corona {
+    0% {
+        transform: rotate(0);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.leftside img {
+    animation: together 5s linear infinite;
+}
+
+@keyframes together {
+    0% {
+        transform: scale(.75);
+
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.75);
+
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.75);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* corona update */
+
+.corona_update {
+    margin: 0 0 30px 0;
+}
+
+.corona_update h3 {
+    color: #ff7675;
+}
+
+/* about section */
+
+.sub_section {
+    background-color: #fbfafd;
+
+}
+
+.sub_section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.sub_section p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.inline {
+    display: flex;
+
+
+}
+
+.custom-control-inline {
+    padding: 15px;
+    padding-left: 25px;
+
+}
+
+/* 
+.footer {
+    background: #08092b !important;
+} */
+
+.footer_style {
+    background: #08092b !important;
+    padding: 0;
+
+}
+
+.corona-update {
+    margin-top: 400px;
+}
+
+.footer_style p {
+    padding: 30px;
+    margin-bottom: 0 !important;
+}
+
+#mybtn {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #08092b;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#mybtn:hover {
+    background: white;
+    color: #08092b;
+}
+
+/* </style> */
+
+@media screen and (max-width: 773px) {
+    .together img {
+        background: violet;
+
+    }
+
+    .leftside {
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+}

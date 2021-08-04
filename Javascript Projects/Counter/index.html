@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    body {
+        background: rgb(9, 9, 73);
+        color: white;
+        margin: auto auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .Container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .counter-container {
+        padding: 30px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform-style: preserve-3d;
+        animation: rotate 5s linear infinite both;
+
+    }
+</style>
+
+<body>
+    <div class="Container">
+        <div class="counter-container">
+            <h3>
+                Projects
+            </h3>
+            <div class="counter" data-target="4000"></div>
+        </div>
+        <div class="counter-container">
+            <h3>
+                Clients
+            </h3>
+            <div class="counter" data-target="15000"></div>
+        </div>
+        <div class="counter-container">
+            <h3>
+                Ongoing Projects
+            </h3>
+            <div class="counter" data-target="12000"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

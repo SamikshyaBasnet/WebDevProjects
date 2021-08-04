@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body {
+
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 30px
+} */
+
+
+.register {
+
+    margin-top: 100px;
+    width: 1400px;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(100, 63, 195, 0.7768149496126575) 35%, rgba(126, 96, 219, 1) 100%);
+}
+
+h3 {
+    font-size: 35px;
+    color: white;
+}
+
+.register-left {
+    color: white;
+    justify-content: space-around;
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.register-left p {
+    padding: 12px;
+    margin-bottom: 70px;
+}
+
+.register-left a {
+    text-decoration: none;
+    background: white;
+    color: black;
+    border-radius: 7px;
+    padding: 15px;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.register-left a:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#myTabContent {
+    margin: 20px 60px;
+    background: white;
+    border-radius: 20px;
+    width: 88%;
+    border-radius: 64px 0px 0px 60px / 45px 25px 0px 42px;
+    border-left: 30px;
+}
+
+.tab-content h3 {
+    padding: 13px;
+    text-align: center;
+}
+
+.tab-content form {
+    justify-content: center;
+    padding: 20px;
+    margin-left: 40px;
+    padding-left: 180px;
+}
+
+/*  */
+
+.register-heading {
+    color: grey;
+    font-size: 30px;
+}
+
+.btn {
+    background: rgb(56, 59, 194);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100px;
+}
+
+.btn:hover {
+    color: rgb(56, 59, 194);
+    background: white;
+}
+
+.submitMsg {
+    color: grey;
+    font-size: 20px;
+}
