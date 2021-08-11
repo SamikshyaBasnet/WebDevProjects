@@ -48,8 +48,8 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input id="searchText" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="submit" class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -183,6 +183,33 @@
       }
 
     }
+    const search = document.getElementById('searchText');
+const submit = document.getElementById('submit')
+
+search.addEventListener("input", () => {
+
+    let inputval = search.value.toLowerCase();
+    console.log('Input value = ', inputval);
+
+    let tableBody = document.getElementById("tablebody");
+    let tablerow = document.getElementsByTagName("tr");
+
+    for (var i = 0; i < tablerow.length; i++) {
+        let td = tablerow[i].getElementsByTagName('td')[0];
+
+        if (td) {
+            let textValue = (td.textContent || td.innerHTML).toLowerCase();
+
+            if (textValue.includes(inputval)) {
+                tablerow[i].style.display = "";
+            } else {
+                tablerow[i].style.display = "none";
+            }
+
+        }
+    }
+})
+    
   </script>
 
 </body>
